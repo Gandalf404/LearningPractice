@@ -11,13 +11,6 @@ using static LearningPractice_Launcher_.LauncherHandler;
 
 namespace LearningPractice_Launcher_
 {
-    //enum LauncherStatus
-    //{
-    //    Ready,
-    //    Failed,
-    //    DownloadingApp,
-    //    DownloadingUpdate
-    //}
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
