@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XtRFG3wXIsL4hmLT+khQzaGD4hNHlk2Yal9chWhPxJcKvfqOrtpNwWnpNvCLUYyKeOU40xBuj7AY+sfCpmsr3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yegor\\source\\repos\\LearningPractice\\LearningPractice(Launcher)\\LearningPractice(Launcher).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yegor\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\yegor\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
