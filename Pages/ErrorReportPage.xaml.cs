@@ -46,8 +46,16 @@ namespace LearningPractice_Launcher_.Pages
                         MessageBox.Show("Введенные данные не соответствуют формату эл.почты", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                     _error = new Error();
-                    _error.ErrorDescription = $"{ErrorDescriptionTextBox.Text} {_exception.TargetSite} {_exception.Source}";
-                    _error.ErrorStatus = "Не начато";
+                    if (_exception.StackTrace != null)
+                    {
+                        _error.ErrorDescription = $"{ErrorDescriptionTextBox.Text} {_exception.StackTrace} {_exception.Source}";
+                        _error.ErrorStatus = "Не начато";
+                    }
+                    else
+                    {
+                        _error.ErrorDescription = $"{ErrorDescriptionTextBox.Text}";
+                        _error.ErrorStatus = "Не начато";
+                    }
                     ErrorReportDepDB.context.Errors.Add(_error);
                     ErrorReportDepDB.context.SaveChanges();
                     Feedback();
