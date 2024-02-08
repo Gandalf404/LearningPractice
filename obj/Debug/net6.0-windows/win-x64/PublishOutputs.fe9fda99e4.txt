@@ -1,0 +1,2 @@
+C:\Users\yegor\source\repos\LearningPractice\App\LearningPractice(Launcher).pdb
+C:\Users\yegor\source\repos\LearningPractice\App\LearningPractice(Launcher).exe

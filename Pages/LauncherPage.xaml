@@ -1,0 +1,25 @@
+﻿<Page x:Class="LearningPractice_Launcher_.Pages.LauncherPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearningPractice_Launcher_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Loaded="Page_Loaded"
+      Title="LauncherPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" Source="C:\Users\admin\source\repos\LearningPractice\LearningPractice(Launcher)\Resources\launcher.png" Stretch="Fill"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <ComboBox x:Name="VersionComboBox" Height="25" Width="150" Margin="0 0 10 0" DisplayMemberPath="Version1" SelectedIndex="0"/>
+            <Button x:Name="StartAppButton" Grid.Row="1" Height="30" Width="150" Content="Запустить приложение" Click="StartAppButton_Click"/>
+            <Button x:Name="UpdateAppButton" Grid.Row="1" Height="30" Width="180" Margin="10 0 0 0" Content="Переустановить приложение"  Click="UpdateAppButton_Click"/>
+            <CheckBox x:Name="IsUpdateExtractedCheckBox" VerticalAlignment="Center" Margin="10 0 0 0" Content="Распаковать в папку"/>
+        </StackPanel>
+    </Grid>
+</Page>
