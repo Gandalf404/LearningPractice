@@ -15,7 +15,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="20 15 0 15">
-            <Image Height="50" Width="50" Source="C:\Users\yegor\source\repos\LearningPractice\LearningPractice(App)\Resources\error.png"/>
+            <Image Height="50" Width="50" Source="C:\Users\admin\source\repos\LearningPractice\LearningPractice(App)\Resources\error.png"/>
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="20 0 0 0">
                 <TextBlock Text="Во время работы приложения произошла ошибка" Margin="20 0 0 0"/>
                 <TextBlock Text="Приносим извенения за предоставленные неудобства" Margin="10 0 0 0"/>
