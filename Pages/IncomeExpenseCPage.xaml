@@ -1,0 +1,27 @@
+﻿<Page x:Class="LearningPractice_IE_.Pages.IncomeExpenseCPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearningPractice_IE_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="IncomeExpenseCPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Доходы" Margin="0 0 20 0"/>
+                <TextBox x:Name="IncomesTextBox" Height="20" Width="140" Text="{Binding Incomes}" PreviewTextInput="IncomesTextBox_PreviewTextInput"/>
+                <TextBlock Text="Расходы" Margin="20 0 20 0"/>
+                <TextBox x:Name="ExpenseTextBox" Height="20" Width="140" Text="{Binding Expense}" PreviewTextInput="ExpenseTextBox_PreviewTextInput"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
+                <TextBlock Text="Содержание операции" Margin="0 0 20 0"/>
+                <TextBox x:Name="OperationDescriptionTextBox" Height="100" Width="300" TextWrapping="Wrap" Text="{Binding OperationDescription}" PreviewTextInput="OperationDescriptionTextBox_PreviewTextInput"/>
+            </StackPanel>
+            <DatePicker x:Name="OriginalDocumentDatePicker" Height="25" Width="150" Margin="0 20 0 0" SelectedDate="{Binding OriginalDocumentDate}"/>
+            <Button x:Name="AddButton" Height="25" Width="150" Margin="0 20 0 0" Content="Добавить" Click="AddButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

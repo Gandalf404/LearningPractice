@@ -1,0 +1,36 @@
+﻿<Page x:Class="LearningPractice_IE_.Pages.ErrorReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearningPractice_IE_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ErrorReportPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="20 15 0 15">
+            <Image Height="50" Width="50" Source="C:\Users\yegor\source\repos\LearningPractice\LearningPractice(App)\Resources\error.png"/>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="20 0 0 0">
+                <TextBlock Text="Во время работы приложения произошла ошибка" Margin="20 0 0 0"/>
+                <TextBlock Text="Приносим извенения за предоставленные неудобства" Margin="10 0 0 0"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 80 0">
+            <TextBlock Text="Ваша почта" Margin="0 0 20 0"/>
+            <TextBox x:Name="EmailTextBox" Height="20" Width="150"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBox x:Name="ErrorDescriptionTextBox" Height="230" Width="950" TextWrapping="Wrap" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 20 0">
+            <Button x:Name="CancelSendReportButton" Grid.Row="1" Height="30" Width="150" Content="Не отправлять" Margin="0 0 20 0" Click="CancelSendReportButton_Click"/>
+            <Button x:Name="SendReportButton" Grid.Row="1" Height="30" Width="150" Content="Отправить отчет" Click="SendReportButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

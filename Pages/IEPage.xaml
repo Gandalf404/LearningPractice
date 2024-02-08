@@ -1,0 +1,29 @@
+﻿<Page x:Class="LearningPractice_IE_.Pages.IEPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearningPractice_IE_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="IEPage">
+
+    <Grid>
+        <DataGrid x:Name="IEDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserSortColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding EntrepreneurSurname}"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding EntrepreneurName}"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding EntrepreneurPatronymic}"/>
+                <DataGridTextColumn Header="ИНН" Binding="{Binding EntrepreneurItn}"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding EntrepreneurAddress}"/>
+                <DataGridTextColumn Header="Расчетный счет" Binding="{Binding EntrepreneurAccountNumber}"/>
+                <DataGridTextColumn Header="Банк расчетного счета" Binding="{Binding EntrepreneurAccountBank}"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="IEUpdateMenuItem" Header="Изменить" Click="IEUpdateMenuItem_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Page>
